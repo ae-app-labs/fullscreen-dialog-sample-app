@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.SampleApp.DayNight" parent="Theme.SampleApp.Dark"/>
+
+    <style name="Theme.SampleApp.Dark" parent="Theme.SampleApp">
+        <!--Color-->
+        <item name="colorPrimary">@color/app_blue_200</item>
+        <item name="colorPrimaryVariant">@color/app_blue_300</item>
+        <item name="colorSecondary">@color/app_orange_100</item>
+        <item name="colorSecondaryVariant">@color/app_orange_200</item>
+
+        <item name="android:colorBackground">@color/app_black_900</item>
+        <item name="colorSurface">@color/app_black_900</item>
+        <item name="colorError">@color/app_red_200</item>
+
+        <item name="colorOnPrimary">@color/app_black_900</item>
+        <item name="colorOnSecondary">@color/app_black_900</item>
+        <item name="colorOnBackground">@color/app_white_50</item>
+        <item name="colorOnSurface">@color/app_white_50</item>
+        <item name="colorOnError">@color/app_white_50</item>
+
+        <item name="scrimBackground">@color/app_black_900_alpha_085</item>
+        <item name="android:statusBarColor">@color/app_black_900_alpha_060</item>
+
+        <item name="elevationOverlayEnabled">true</item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+</resources>

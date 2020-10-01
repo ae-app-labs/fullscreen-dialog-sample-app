@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_blue_50">#d6f3ff</color>
+    <color name="app_blue_200">#97c4df</color>
+    <color name="app_blue_300">#76aac8</color>
+    <color name="app_blue_800">#124D67</color>
+    <color name="app_blue_900">#00374e</color>
+
+    <color name="app_orange_100">#ffe0bb</color>
+    <color name="app_orange_200">#ffcd8f</color>
+    <color name="app_orange_500">#fe9b3e</color>
+    <color name="app_orange_600">#f9903c</color>
+
+    <color name="app_red_200">#FF98A5</color>
+    <color name="app_red_400">#FF3c3f</color>
+    <color name="app_red_500">#ff1d1c</color>
+
+    <color name="app_white_50">#ffffff</color>
+    <color name="app_black_900">#000000</color>
+
+    <color name="app_white_50_alpha_060">#99ffffff</color>
+    <color name="app_blue_50_alpha_060">#80d6f3ff</color>
+    <color name="app_black_900_alpha_020">#33000000</color>
+    <color name="app_black_900_alpha_085">#D9000000</color>
+    <color name="app_black_900_alpha_060">#99000000</color>
+
+    <color name="nav_bar">@color/app_black_900_alpha_020</color>
+
+</resources>

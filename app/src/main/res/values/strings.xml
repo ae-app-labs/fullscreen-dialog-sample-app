@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">dialog-sample</string>
+    <string name="str_open_dialog">Open Dialog</string>
+    <string name="str_save">SAVE</string>
+    <string name="str_dialog_title">Full Screen Dialog</string>
+    <string name="content_desc_btn_close">Close Dialog</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/content_desc_btn_close"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_close" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/str_dialog_title"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/str_save"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- End Header -->
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/unit_xl">
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="@dimen/unit_xl"
+                android:layout_marginTop="@dimen/unit_l"
+                android:layout_marginBottom="@dimen/unit_l"
+                android:background="@color/color_grey_dark" />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="250dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="280dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="240dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="@dimen/unit_l"
+                android:layout_marginTop="@dimen/unit_m"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_light" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="@dimen/unit_xl"
+                android:layout_marginTop="@dimen/unit_l"
+                android:layout_marginBottom="@dimen/unit_m"
+                android:background="@color/color_grey_dark"
+                android:backgroundTint="?attr/colorAccent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
