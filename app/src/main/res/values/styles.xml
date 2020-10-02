@@ -7,10 +7,11 @@
 
     <!-- Widget Styles -->
 
-    <style name="DialogTheme" parent="Theme.SampleApp">
+    <style name="DialogTheme" parent="Theme.SampleApp.DayNight">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowIsFloating">false</item>
+        <item name="android:background">?attr/colorSurface</item>
     </style>
 
 </resources>

@@ -3,20 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorSurface">
+    android:theme="@style/DialogTheme">
 
-    <com.google.android.material.appbar.AppBarLayout
+    <!-- End Header -->
+
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryVariant"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:background="?attr/colorPrimaryVariant">
 
             <ImageButton
                 android:id="@+id/btnClose"
@@ -25,16 +29,21 @@
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="@string/content_desc_btn_close"
                 android:tint="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_close" />
 
             <TextView
-                android:layout_width="0dp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
+                android:background="?attr/colorPrimaryVariant"
+                android:gravity="center"
                 android:text="@string/str_dialog_title"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@+id/btnSave"
+                app:layout_constraintStart_toEndOf="@+id/btnClose" />
 
             <Button
                 android:id="@+id/btnSave"
@@ -43,12 +52,10 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="@string/str_save"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <!-- End Header -->
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/content"
@@ -74,7 +81,7 @@
                 android:background="@color/color_grey_dark" />
 
             <View
-                android:layout_width="240dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"
@@ -88,42 +95,42 @@
                 android:background="@color/color_grey_light" />
 
             <View
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"
                 android:background="@color/color_grey_light" />
 
             <View
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"
                 android:background="@color/color_grey_light" />
 
             <View
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"
                 android:background="@color/color_grey_light" />
 
             <View
-                android:layout_width="250dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"
                 android:background="@color/color_grey_light" />
 
             <View
-                android:layout_width="280dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"
                 android:background="@color/color_grey_light" />
 
             <View
-                android:layout_width="240dp"
+                android:layout_width="300dp"
                 android:layout_height="@dimen/unit_l"
                 android:layout_marginTop="@dimen/unit_m"
                 android:layout_marginBottom="@dimen/unit_m"

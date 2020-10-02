@@ -20,7 +20,7 @@
         <item name="colorOnError">@color/app_white_50</item>
 
         <item name="scrimBackground">@color/app_black_900_alpha_085</item>
-        <item name="android:statusBarColor">@color/app_black_900_alpha_060</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
 
         <item name="elevationOverlayEnabled">true</item>
 
